@@ -26,8 +26,9 @@
     -webkit-text-size-adjust: 100%;
   }
   main { max-width: 42rem; margin: 0 auto; }
-  nav { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  nav { display: flex; justify-content: space-between; gap: .75rem 1.5rem; flex-wrap: wrap;
         font-size: .95rem; margin-bottom: 2.5rem; }
+  nav .pages { display: flex; gap: .75rem 1.5rem; flex-wrap: wrap; }
   nav a { text-decoration: none; }
   nav a:hover, nav a:focus-visible { text-decoration: underline; }
   h1 { font-family: ui-serif, Georgia, "Times New Roman", serif; font-weight: 600;
@@ -65,7 +66,7 @@
 <body>
 <main>
 <nav aria-label="Site">
-<a href="privacy/">Privacy policy</a>
+<span class="pages"><a href="privacy/">Privacy policy</a><a href="terms/">Terms of use</a></span>
 <a href="zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
 </nav>
 <h1>Support</h1>
@@ -74,19 +75,26 @@
 <p>Neighborhood Playdate helps a parent arrange a first playdate with a family nearby, inside a week, without a group chat. You post when you're free, see which families on your block overlap, and send one invitation with a time and a public place. Once you both say yes, the rest happens in Messages.</p>
 <p>Questions, problems, or a family to report: <strong><a href="mailto:julien.lerosty@gmail.com">julien.lerosty@gmail.com</a></strong>. A person reads every message.</p>
 <h2>Joining</h2>
-<p><strong>You need an invite code.</strong> Playdate opens one block at a time, and every family joins with a code from a neighbor who is already on. Ask them to open <strong>Settings → Invite a neighbor</strong>. A code works once, so each new family needs its own.</p>
-<p><strong>You sign in with your phone number.</strong> We text you a six-digit code; there is no password. If the code doesn't arrive within a minute, check the number and ask for a new one.</p>
-<p><strong>If you see "Not on this block yet"</strong>, your area hasn't opened. We keep a rough, 200-metre version of your location so we can tell you when a block opens near you, and nothing else.</p>
+<p><strong>Playdate is invite-only and opens one block at a time.</strong> The first screen says so and offers two ways in.</p>
+<ul><li><strong>"I have an invite code".</strong> For a code from a neighbor who is already on. They make one under <strong>Settings → Invite a neighbor</strong>. A neighbor's code works once, so each new family needs its own.</li><li><strong>"I don't have a code yet".</strong> You sign in, tell the app roughly where you live, and join the waiting list. We'll let you know when a block opens near you.</li></ul>
+<p><strong>You sign in with your phone number.</strong> We text you a six-digit code; there is no password. If it doesn't arrive, check the number and tap <strong>"Send a new code"</strong>, which is ready after 30 seconds. If the app says too many codes were sent, wait a few minutes and try again.</p>
+<p><strong>Where you live.</strong> Use your current location, or type your cross-streets. Either way it is rounded on your phone to a 200-meter square before anything is sent. If the app can't find a corner, check the spelling or try a nearby street.</p>
+<p><strong>If you see "Not on this block yet"</strong>, your area hasn't opened. We keep a rough, 200-meter version of your location so we can tell you when a block opens near you, and nothing else. That screen also lets you sign out or delete your account.</p>
+<p><strong>If the app asks you to update</strong>, install the latest version from the App Store. It asks only when your version can no longer work with the service.</p>
 <h2>Using it</h2>
 <ul><li><strong>Post a window.</strong> The hours you're actually free, and what you'd like to do. Windows vanish once they pass.</li><li><strong>See who overlaps.</strong> Families on your block whose free hours cross yours, closest first.</li><li><strong>Propose.</strong> One time, one public place. They have 24 hours to answer.</li><li><strong>Say hello.</strong> After you both accept, you each get the other's phone number once, and Messages takes over.</li><li><strong>Afterwards, one question:</strong> did it happen? It is the only thing the app keeps score of.</li></ul>
+<p><strong>Settings</strong> is the person icon at the top left of the Windows tab. From there you can invite a neighbor, suggest a spot, change your kids' ages, manage blocked families, and find the privacy policy, the terms of use and how to reach us.</p>
+<p><strong>Suggest a spot</strong> when the map is missing a park or a library. We look at each suggestion before it appears on the map.</p>
+<h2>Language</h2>
+<p>Playdate is in English and Simplified Chinese, and follows your iPhone's language. To choose a language for Playdate alone, open your iPhone's Settings app, find Playdate, and pick one.</p>
 <h2>Notifications</h2>
-<p>Playdate sends three kinds: a new proposal, a yes, and the evening question about whether a playdate happened. If they stop arriving, check <strong>Settings → Notifications → Playdate</strong> on your iPhone.</p>
+<p>Playdate sends three kinds: a new proposal, a yes, and the evening question about whether a playdate happened. They arrive in the language Playdate was last opened in. If they stop arriving, check <strong>Settings → Notifications → Playdate</strong> on your iPhone.</p>
 <h2>Safety</h2>
-<ul><li><strong>First playdates are always at a public spot.</strong> Homes unlock only after you've met once.</li><li><strong>Children are an age range and, if you choose, a gender.</strong> Never a name, a birthday, or a photo.</li><li><strong>Your address never leaves your phone.</strong> It is rounded to a 200-metre square before anything is sent.</li><li><strong>Block or report</strong> from the menu on any match or proposal. Blocking is quiet and mutual: neither family sees the other again, and nobody is told. A report reaches us straight away. Manage blocks under <strong>Settings → Blocked families</strong>.</li></ul>
+<ul><li><strong>First playdates are always at a public spot.</strong> Homes unlock only after you've met once.</li><li><strong>Children are an age range and, if you choose, a gender.</strong> Never a name, a birthday, or a photo.</li><li><strong>Your exact location never leaves your phone.</strong> It is rounded to a 200-meter square before anything is sent, and neighbors see only a distance, rounded to about 400 meters.</li><li><strong>Block or report</strong> from the menu on any match or proposal. Blocking is quiet and mutual: neither family sees the other again, and nobody is told. A report reaches us straight away, and we act on every report within 24 hours. Manage blocks under <strong>Settings → Blocked families</strong>.</li><li><strong>Some words aren't allowed.</strong> Names and suggested spots are checked against a list of objectionable words. If you see "That wording isn't allowed here", try something else.</li><li><strong>Everyone agrees to the <a href="terms/">terms of use</a>:</strong> parents and guardians aged 18 or over only, and zero tolerance for objectionable content or abusive behavior.</li></ul>
 <h2>Deleting your account</h2>
-<p><strong>Settings → Delete my account</strong> removes your family, your children's age ranges, your windows, your playdates and your sign-in, at once and permanently. There is no separate request to make.</p>
-<h2>Privacy</h2>
-<p>What is collected, who sees it, and why: <a href="privacy/">the privacy policy</a>.</p>
+<p><strong>Settings → Delete my account</strong> removes your family, your photo, your children's age ranges, your windows, your playdates and your sign-in, at once and permanently. There is no separate request to make. If you haven't joined a block yet, the same button is on the "Not on this block yet" screen.</p>
+<h2>Privacy and terms</h2>
+<p>What is collected, who sees it, and why: <a href="privacy/">the privacy policy</a>. The rules everyone agrees to: <a href="terms/">the terms of use</a>.</p>
 <footer>Neighborhood Playdate is invite-only and works one block at a time.</footer>
 </main>
 </body>
