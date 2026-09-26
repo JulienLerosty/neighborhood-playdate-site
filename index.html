@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support &middot; Neighborhood Playdate</title>
+<meta name="description" content="How to join Neighborhood Playdate, use it, stay safe, and delete your account.">
+<link rel="alternate" hreflang="zh-Hans" href="zh/">
+<style>
+  :root {
+    --ground: #FBF7F1; --ink: #1F1B17; --secondary: #6B625A;
+    --border: #E6DDD1; --accent: #2F7A55; --tint: #DCECE2;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #17140F; --ink: #F2ECE3; --secondary: #A79C8E;
+      --border: #332C22; --accent: #74C39A; --tint: #1E3A2C;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 3rem 16px 6rem; background: var(--ground); color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  nav { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+        font-size: .95rem; margin-bottom: 2.5rem; }
+  nav a { text-decoration: none; }
+  nav a:hover, nav a:focus-visible { text-decoration: underline; }
+  h1 { font-family: ui-serif, Georgia, "Times New Roman", serif; font-weight: 600;
+       font-size: clamp(2rem, 1.4rem + 2.6vw, 2.9rem); line-height: 1.15; margin: 0 0 .4rem; }
+  h2 { font-family: ui-serif, Georgia, "Times New Roman", serif; font-weight: 600;
+       font-size: 1.5rem; line-height: 1.25; margin: 3rem 0 .75rem;
+       padding-top: 1.5rem; border-top: 1px solid var(--border); }
+  h3 { font-size: 1.05rem; font-weight: 600; margin: 2rem 0 .5rem; color: var(--accent); }
+  p, li { margin: 0 0 1rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: .5rem; }
+  strong { font-weight: 600; }
+  .updated { color: var(--secondary); font-size: .95rem; margin-bottom: 2.5rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: 0 0 1.5rem; }
+  th, td { text-align: left; vertical-align: top; padding: .7rem .8rem;
+           border-bottom: 1px solid var(--border); }
+  th { background: var(--tint); color: var(--accent); font-weight: 600;
+       font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; }
+  /* Narrow screens: one labelled block per row, so no column is hidden off-screen. */
+  @media (max-width: 640px) {
+    thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    tr { display: block; border: 1px solid var(--border); border-radius: 10px;
+         padding: .3rem .2rem; margin-bottom: .85rem; }
+    td { display: block; border: 0; padding: .45rem .7rem; }
+    td::before { content: attr(data-label); display: block; color: var(--accent);
+                 font-size: .72rem; letter-spacing: .05em; text-transform: uppercase;
+                 font-weight: 600; margin-bottom: .15rem; }
+  }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+           color: var(--secondary); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Site">
+<a href="privacy/">Privacy policy</a>
+<a href="zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+</nav>
+<h1>Support</h1>
+<p class="updated">Neighborhood Playdate &middot; last updated 26 September 2026</p>
+<h2>The short version</h2>
+<p>Neighborhood Playdate helps a parent arrange a first playdate with a family nearby, inside a week, without a group chat. You post when you're free, see which families on your block overlap, and send one invitation with a time and a public place. Once you both say yes, the rest happens in Messages.</p>
+<p>Questions, problems, or a family to report: <strong><a href="mailto:julien.lerosty@gmail.com">julien.lerosty@gmail.com</a></strong>. A person reads every message.</p>
+<h2>Joining</h2>
+<p><strong>You need an invite code.</strong> Playdate opens one block at a time, and every family joins with a code from a neighbor who is already on. Ask them to open <strong>Settings → Invite a neighbor</strong>. A code works once, so each new family needs its own.</p>
+<p><strong>You sign in with your phone number.</strong> We text you a six-digit code; there is no password. If the code doesn't arrive within a minute, check the number and ask for a new one.</p>
+<p><strong>If you see "Not on this block yet"</strong>, your area hasn't opened. We keep a rough, 200-metre version of your location so we can tell you when a block opens near you, and nothing else.</p>
+<h2>Using it</h2>
+<ul><li><strong>Post a window.</strong> The hours you're actually free, and what you'd like to do. Windows vanish once they pass.</li><li><strong>See who overlaps.</strong> Families on your block whose free hours cross yours, closest first.</li><li><strong>Propose.</strong> One time, one public place. They have 24 hours to answer.</li><li><strong>Say hello.</strong> After you both accept, you each get the other's phone number once, and Messages takes over.</li><li><strong>Afterwards, one question:</strong> did it happen? It is the only thing the app keeps score of.</li></ul>
+<h2>Notifications</h2>
+<p>Playdate sends three kinds: a new proposal, a yes, and the evening question about whether a playdate happened. If they stop arriving, check <strong>Settings → Notifications → Playdate</strong> on your iPhone.</p>
+<h2>Safety</h2>
+<ul><li><strong>First playdates are always at a public spot.</strong> Homes unlock only after you've met once.</li><li><strong>Children are an age range and, if you choose, a gender.</strong> Never a name, a birthday, or a photo.</li><li><strong>Your address never leaves your phone.</strong> It is rounded to a 200-metre square before anything is sent.</li><li><strong>Block or report</strong> from the menu on any match or proposal. Blocking is quiet and mutual: neither family sees the other again, and nobody is told. A report reaches us straight away. Manage blocks under <strong>Settings → Blocked families</strong>.</li></ul>
+<h2>Deleting your account</h2>
+<p><strong>Settings → Delete my account</strong> removes your family, your children's age ranges, your windows, your playdates and your sign-in, at once and permanently. There is no separate request to make.</p>
+<h2>Privacy</h2>
+<p>What is collected, who sees it, and why: <a href="privacy/">the privacy policy</a>.</p>
+<footer>Neighborhood Playdate is invite-only and works one block at a time.</footer>
+</main>
+</body>
+</html>

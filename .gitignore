@@ -1,0 +1,12 @@
+# Allowlist: only the built pages are ever committed here.
+*
+!.gitignore
+!.nojekyll
+!README.md
+!index.html
+!privacy/
+!privacy/index.html
+!zh/
+!zh/index.html
+!zh/privacy/
+!zh/privacy/index.html
